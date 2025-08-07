@@ -1,0 +1,41 @@
+/* 
+html = 웹 언어
+css 스타일 전용 언어
+js = 기능 언어
+
+
+css 전체 주석은 현재와 같이 작성
+
+    <h3 style="color:red; text-decoration: underline">색상확인</h3>
+    <link rel="stylesheet" href="css/00_index.css">
+    <h3 class="빨간밑줄색상">색상확인</h3>
+
+css 에서 h3 와 같은 태그를 꾸며줄 때는 다양한 밥법 존재
+그 중 가장 많이 쓰이는 방법은
+class = "css 스타일에서 작성할 명칭" 을 가장 많이 사용
+
+사용 방법
+
+<h3 class="빨간밑줄색상">색상확인</h3>
+
+css 에서는
+
+.빨간밑줄색상 {
+        설정할 스타일을 ; (코드에서 마침표) 를 이용해서 구분
+}        
+*/
+
+/* 제일 많이 사용하는 스타일 기법
+
+ color : 글자 색상;
+ text-decoration: 글자 꾸미기
+        굉장히 많은 종류가 존재
+        underline : 밑 줄
+                under : 아래, 밑
+                line  : 줄
+                    : 밑 줄을 제거할 때 많이 사용 (나중에 사용 예정)
+*/
+.빨간밑줄색상 {
+    color:red;
+    text-decoration: underline;
+}
