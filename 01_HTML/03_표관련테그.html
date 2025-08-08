@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 관련 태그</title>
+</head>
+<body>
+    <h1>표 관련 태그</h1>
+    <h3>title(표) 태그</h3>
+    <pre>
+        - 웹 문서에서 자료(데이터) 정리를 위해 사용하는 태그
+        - <table> 태그는 행, 열을 작성하기 위한 판을 나타냄
+
+            tr : 테이블에서 가로 한 줄을 나타내는 태그
+                teble row
+            th : 두꺼운 글씨로 표현, 가운데 정렬이 자동으로 적용
+                teble head
+            td : 데이블에서 가로 한 줄에서 한 칸을 나타내는 태그
+                table data
+    </pre>
+    <h3>테이블 연습 1</h3>
+    <table border="1" style="border-collapse: collapse">
+        <caption>
+        표의 설명을 작성하는 공간 / 제목    
+        </caption> 
+            <tr>
+             <th>이름</th>
+             <th>나이</th>
+             <th>주소</th>
+        </tr>
+        <tr>
+            <td>김미자</td>
+            <td>20</td>
+            <td>서울시 종로구</td>
+        </tr>
+    </table>
+    <!--
+     table 내에서
+     테이블 머리에 해당하는 부분과 본문부분 꼬리부분으로 태그를
+     나누길 원한다면
+     thead, tbody, tfoot 태그에 작성하지만
+     나누지 않아도 괜찮다면
+     thead, tbody, tfood 생략가능
+     
+     생략했을 경우에는 tbody 내에 존재하는 것으로 간주
+     -->
+    
+    <h3>테이블 연습 2</h3>
+    <table border="1" style="border-collapse: collapse">
+        <caption>
+        표 제목    
+        </caption>
+        
+        <thead>
+            <tr>
+             <th>이름</th>
+             <th>나이</th>
+             <th>주소</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>김미자</td>
+            <td>20</td>
+            <td>서울시 종로구</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="2">총 인원</th>
+                <th1명></th1>
+            </tr>
+        </tfoot>
+        <!--
+            colspan : 가로로 되어있는 표 한 칸을 몇개 합칠 것이가
+            rowspan : 가로를 몇 개 합칠 것인가?
+                        가로를많이 합칠 수록 세로로 커짐
+            -->
+   </table>
+</body>
+</html>
+

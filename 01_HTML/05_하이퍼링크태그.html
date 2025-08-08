@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a 태그 이용해서 이미지 클릭하면 링크 이동하기</title>
+    <style>
+        /*
+        
+        style 태그는 파일이름.css 로
+        구분지어서 작성하는 것과 동일한 기능
+
+        차이점
+        html 코드 안에 스타일을 작성하는가
+
+        <link href="css/파일이름.css">
+        로 구분지어서 style 관련 언어만 따로 작성해서 불러오는가
+        */
+        a {
+            display : block;
+        /* 
+        화명에 보이는 a 태그를 한 줄 전체 차지하게 하여 줄 바꿈 효과
+        */
+        }
+ 
+    </style>
+    <link rel="stylesheet" href="css/02_하이퍼링크태그.css" />
+</head>
+<body>
+    <pre>
+        각 이미지 로고를 클릭해서 주소로 이동하 수 있도록 설정
+        a 태그 내부에 img 태그를 넣거나 글자를 작성하여
+        글자나 이미지를 클릭했을 때 hrdf 에 작성한 주소로
+        이동하게 설정할 수 있다.
+    </pre>
+    각 이미지 로고를 클릭해서 주소로 이동하 수 있도록 설정
+    <a href="https://www.naver.com/">
+        <img 
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARQAAAC2CAMAAAAvDYIaAAAAflBMVEX///8tswEhsQBgwFCKz34ArQAVrwCw3aqDzHnE5r2d1pPG5sD2/PMlswAPrgCY05Db8NbR6875/fiT0ojh8t7O6sk8tx624K+g15en2p9RvDxzx2Wu3ae+47i64bNYvkXu+Ot+ynFqxFpDuClUvUGP0YV3yGnd8NpkwlNAuCQIIdnFAAAE0ElEQVR4nO3Z6XLiOBSGYVvECkmwQxYSQkgDWbvv/wYHS5bOkWxmSFc1nql5n38IgaTP1oIpCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8B+ymJ4FT7FwHgun50nttdQ+m7qS2U5K7qTivRRP10WhKondNmnK+Viur+7//Kj/wboyQbUIhRex0O6S2o0R1YUrWlkpmcWKd03ytZUZUM2TpkKLtjHPV6cZ/CHntozq267wKhaaqa78Q1Uu60lWt7Q/Ys0Hqfewf1mVAxoXih14xzQPNyca/yAdinnuCg+Fsqp116utKxz4fHEvKdj97PluKO2XX54ogCE6lLJ58YUHQrlPx2Z8v5dGRhJqPklZ095+3w+lrNanCyGXhFJavyocCOXOpP2uXelM3RVhVdrU6Rf8RijhRhxDGorJ14kklCyTsvHr4WcsN2e+osqpcnvJ74QSvmwEaShl47bg4VB6/TevrnzeSJGvKQtyvXEFKpRKZKG8rVZlpYM/aRBaFkrZbItDoWzqMtPtwW/y6S9X8ByHZv2+LaGYYha170gots1o9iH9GW/+5KHU78WBULZxZJOQjvHnvUepvnQFkoFfdpJQUioUvwurhOd/evCH5KGUdnkglMtw+e1cavu31BRoXy7ykL4Tylm8y/5FobRL42AocgWLXeh44wci25K75WVc4Yyr1pTldefOLcG9UGTqdXNxBP1Q9ld7KJSrsJzWP2UhNZ/uPZlZtl2oZT/+7D6sQpFTvtu7sjVF3WX+hDOKgVDs5c1AKK/hCu4Xkm3cbyrf8bjK7BMrvuK7cQIMbck2C8V8rNfLiexkbnUbhwpFtgyZDjEUOXq0d3X8aWP9uXMhKekj7lto5ZhQyv1vQaM2uHC8HoGEYtQhTDoaQpGRtkulrBq//Nt6qHH/sI+hlaNCSZnxbhQdytN50+9aCCXeG+5Xnyw6lZ8hT3GVmco9ZWMr3w/FPIy2oiShXBab/CAfQ7mJebnLf9tkFW7jsGtZhT9iKyqUOmj+JhRTffZ6ekJJKLNeD0MoMrUat8tu5IL7Crv+3FMnUhXK66SzcVvwYCj1x7hP35JQisd8AoUboT+xYih+4fjqzZDuIZRzzOFNf+eIjw1aaSiy8aahrA/+li3Llf+iVV7eLKSV40JRD2ZGffCWh3Kbjb4L5a08zD8cKF56ualWjgnFnKkrYmfFiLJQiqvs6ZoLZT74PCRU6dbT7B6zT6qVoYW2tu0HdSjqitS/Th2EloeillQJZdfblZLh+2+6TitVeksdDNW0f4lc6MPzhbqjnovx9EIpkqcmLpR8TuWh+KPnNhm5Sf4bOTIUnX6zPHESSj+UhR6BC+VRhWID6X73dC1dpKvkJ+6xoei/RqpFMZZ+KMVUDc71VG0s8Xm9nmbdgWSh9+1V0srRoeid3W5PMP5BA6Hoy9X2VP2zoc4e6o8xc937nPpfrHV0KMVSLbYPJxj/oPMmbgYxlHklO8S+p2dWXsqWspVKpttn1/G7jE1bkbqKdaFI+34VejdS4ecfH/6wl008dssxcimF+6Tii8nkXR2/X1WxP2vdvsePPaWtrCYDXKVF0tTeVjf3WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4P/sLBIY77y3z4lMAAAAASUVORK5CYII=" alt="네이버 로고" />
+    </a>
+    <a href="https://www.google.com/"> 구글로 이동하기 </a>
+    <a href="04_이미지관련테그.html"> 컴퓨터 내에 존재하는 파일로 이동하기</a>
+</body>
+</html>
