@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form / input 태그</h1>
+    <h3>form 태그</h3>
+    <pre>
+        - 입력 양식을 작성하는 공간
+        - 내부에 작성된 입력 값을 지정된 곳으로 제출하는 역할
+
+        [속성]
+        1) action : 제출될 곳을 지정하는 속성
+        2) method : 설정된 곳으로 데이터를 전달하는 방식
+        3) name   : 이름을 지정하는 속성 / 지정된 이름은 DB에 전달하는 이름값이됨
+        4) target : 제출된 페이지를 현재 / 새 앱으로 열기 선택해서 설정
+     </pre>
+
+     <hr>
+     <h3>inpudt 태그</h3>
+     <pre>
+        - 웹 문서에서 사용자(클라이언트)가 입력할 수있는
+        양식을 제공하는 태그는
+
+        - 많은 type 재재하고, input의 병경 형태도 다수 존재하는
+
+        * input 태그에는 name 속성이 필수로 작성되어야 한다
+         (꼭은 아니지만 작성하는 경우 많음 80% 이상)
+     </pre>
+     <hr />
+     <h3>form, input태그 </h3>
+     
+     <form>
+        이름 : <input type="text" name="username" />
+        <button>제출</button>
+     </form>
+     <hr />
+    </h3> text 관련 input 태그</b3>
+    <pre>
+        type="text" : 한줄 택스트 입력 상자(기본값)
+        type="password" : 비밀번호 입력 상자(사용자가 입력한 값 모자이크 처리)
+
+        type="ur1"
+        type="search"
+        type="te1"
+        type="email1"
+    </pre>
+    <form>
+        아이디 : <input title="text" name="input-id" />
+
+        <br />
+        비밀번호 : <input type="password" name="input-pw" />
+        <button>로그인 (제출)</button>
+    </form>
+    <hr>
+    <h3>숫자 관련 input 태그</h3>
+    <pre>
+        type="numaaber" : 숫자만 입력 가능한 입력 상자
+        type="range" : 슬라이드 바를 이용해서 숫자를 지정
+                        (단독 사용 불가, javascript 와 함께 사용 가능)
+
+        [속성]
+        1. min : 최소값
+        2. max : 최대값
+        3. step : 숫자가 증가/ 감소하는 단계 (간격)
+        4. value : 초기 값(기본 값) 지정
+     </pre>
+     <form>
+        점수 입력1 : 
+        <input type="range" min="0" max="100" step="1" value="50" />
+        <br />
+        점수 입력2 : 
+        <input type="number" min="0" max="100" step="1" value="50" />
+    <button>제출</button> 
+    </form>
+     <hr>
+     <h3>날짜 / 시간 관련 input 태그</h3>
+     <ul>
+        <li><input type="date" /></li>
+        <li><input type="month" /></li>
+        <li><input type="week" /></li>
+        <li><input type="time" /></li>
+        <li><input type="datetime-local" /></li>
+     </ul>
+     <hr>
+     <h3>radio, checkbo</h3>
+     <pre>
+        - 여러 연관된 값을 묶어서 선택하는 경우 사용
+        - radio : 여러 값 중 하나 선택( ex: 성별)
+        - checkbox : 여라값 중 원하는 것을 하나, 두 가지 이상, 하나도 선택안함, 모두 선택
+                    처럼 선택의 범위를 다양하게 선택할 수 있음
+                    (ex: 상세검색, 관심분야, 취미)
+     </pre>
+     <h4>ridio 확인</h4>
+     <input type="radio" name="team" value="A" />A팀
+     <input type="radio" name="team" value="B" />B팀
+     <input type="radio" name="team" value="C" />C팀
+     <input type="radio" name="team" value="D" />D팀
+
+     <h4>checkbox 확인</h4>
+     <input type="checkbox" name="color" value="red" />red
+     <input type="checkbox" name="color" value="yellow" />red
+     <input type="checkbox" name="color" value="orange" />red
+     <input type="checkbox" name="color" value="green" />red
+
+     <hr />
+     <h3>select / option 태그 </h3>
+     <pre>
+         - select : 클릭하면밑으로 메뉴가 내려오는 입력 태그
+         - option : select 클릭 시 보여질 메뉴를 작성하는 태그   
+     </pre>
+     <select name="menu">
+       <option>초밥</option>
+       <option>새러드</option>
+       <option> 라면</option>
+       <option> 햄버거</option>
+      </select>
+    </body>
+</html>

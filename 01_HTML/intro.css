@@ -1,0 +1,129 @@
+body {
+margin: 0;
+padding-top: 60px;
+background-color: #f8f9fa;
+color: #333;
+line-height: 1.7;
+}
+
+.section {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0,05);
+    }
+
+    .section h2 {
+      font-size: 32px;
+      padding-bottom: 8px;
+      border-bottom: 3px solid #007bff;
+      margin-bottom: 32px;
+      display: inline-block;
+    }
+
+    .intro-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;     
+    }
+
+    .profile-img {
+      width:150px;  
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #f8f9fa;
+      box-shadow: 00 10px rgba(0, 0, 0, 0.1);
+      flex-shrink:0;
+    }
+
+    .intro-text p {
+      margin: 8px 0;
+    }
+
+    #skills h3 {
+      margin-top: 40px;
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+
+    table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 16px;
+     font-size: 15px;
+    }
+
+    th,td{
+     border: 1px solid #dee2e6;
+     padding: 13px 16px;
+     text-align: center;
+     vertical-align: middle;
+    }
+
+    thead {
+     background-color: #f8f9fa;
+    }
+
+    tbody tr:hover {
+      background-color: #f8f9fa;
+    }
+
+    ol {
+      list-style: none;
+      padding-left: 0;
+    }
+    ol li {
+     background-color: #f8f9fa;
+     margin-bottom: 8px;
+     padding: 12px 20px;
+     border-radius: 8px;
+     border-left: 4px solid #007bff;
+    }
+    ol li s {
+     color:#6c757d;
+    }
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap wrap;
+      gap: 24px;
+      justify-content: center;
+     }
+
+    .project-item { 
+     background-color: #ffffff; 
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    }
+
+    .project-item:hover { 
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    }
+    .project-item img { 
+      width: 100%;
+      height: 200px;
+      object-fit: cover;   
+      display: block;
+      background-color: #eee;
+    }
+
+     .project-item > div { 
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+     }
+
+
+
+
+
+
