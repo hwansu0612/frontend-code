@@ -57,14 +57,14 @@ body {
 }
 
 .main-container > ul {
-
-}
-    
-    
-    transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: 13px;  
 }
 
-nav a:hover {
+.main-container > ul li {
+    margin-left: 20px;
+}
 
     background-color: #A0522D;
 }
