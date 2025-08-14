@@ -120,10 +120,126 @@ line-height: 1.7;
       padding: 16px;
       flex-grow: 1;
       display: flex;
+      flex-direction: column;
      }
 
+     .project-item h4 {
+       margin: 0 0 8px;
+     }
 
+     .project-item p {
+       font-size: 14px;
+       color: #6c757d;
+       margin-bottom: 16px;
+       flex-grow: 1;
+     }
 
+     .project-item a, .project-item .coming-soon {
+       display: inline-block; 
+       font-size: 14px;
+       font-weight: 500;
+       padding: 8px 16px;
+       border-radius: 20px;
+       margin-top: auto;
+     }
 
+     .project-item a {
+      background-color: #007bff;
+      color: white;
+     }
+     .project-item a:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+     }
 
+     .coming-soon {
+      background-color: #ffc107;
+      color: #333;
+     }
 
+     .contact-info ul {
+      list-style: none;
+      padding: 0;
+     }
+     .contact-info li {
+      margin-bottom: 12px;
+      font-size: 17px;
+     }
+     
+     .social-links {
+      margin-top: 32px;
+      border-top: 1px solid #dee2e6;
+      padding-top: 32px;
+     }
+     .social-links a { 
+      margin-left: 16px;  
+     }
+     .social-links img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: transform 0.2 ease;
+     }
+     .social-links img:hover {
+      transform: scale(1.1);
+     }
+
+     footer {
+      text-align: center;
+      padding: 32px 16px; 
+      font-size: 14px; 
+      color: #6c757d;
+     }
+
+     .footer hr {
+      margin-top: 0;
+     }
+
+     .back-to-top {
+      display: inline-block;
+      margin-top: 16px;
+      font-weight: 500;
+      color: #333;
+      background-color: #dee2e6;
+      padding: 8px 24px;
+      border-radius: 20px;
+     }
+
+     .back-to-top:hover {
+       background-color: #ced4da;
+       text-decoration: none;
+      }
+   
+      @media (max-width: 768px) {
+       body {
+        padding-top: 0;
+       }
+        .nav{
+         position: static;
+         height: auto;
+         padding: 8px 0;
+        }
+        .nav ul {
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 8px;
+       }
+        .nav a {
+         padding: 8px;
+        }
+        .header {
+         padding: 32px 16px;
+        }
+        .header h1 {
+         font-size: 32px;
+        }
+        .section {
+          margin: 16px;
+          padding: 24px;
+        }
+        .intro-container {
+          flex-direction: column;
+          text-align: center;
+          gap: 24px
+        }
+    }
